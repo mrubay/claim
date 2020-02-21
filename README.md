@@ -18,7 +18,7 @@ Enter
 7. git clone https://github.com/mrubay/claim
 Enter
 Lalu masukan kode perintah untuk menjalankan script , Kode dibawah ini untuk daftar dan auto claim voucher gofood gojek
-8. cd food
+8. cd claim
 Enter
 9. php claim.php
 Enter
