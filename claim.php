@@ -8,7 +8,7 @@ echo color("blue","| ________|______|__|_______|_________|\n");
 echo color("blue","| __________|___|_____|___|___________|\n");
 echo color("blue","| ____________|_________|_____________|\n");
 echo color("blue","| Version :_______∆UBUR - UBUR∆_______|\n");
-echo color("green","| Time    :".date('[d-m-Y] [H:i:s]')."|\n");
+echo color("green","| Time    :".date('[d-m-Y] [H:i:s]    ')."|\n");
 echo color("blue"," ======================================\n");
 
 // function change(){
