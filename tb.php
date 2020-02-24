@@ -186,8 +186,6 @@ echo color("blue"," ======================================\n");
          echo color("red","-] GAGAL!!!\n");
          }
          }
-         }
-         }
          }else{
          goto setpin;
          }
@@ -196,8 +194,6 @@ echo color("blue"," ======================================\n");
          echo"\n==================================\n\n";
          echo color("yellow","!] Silahkan input kembali\n");
          goto otp;
-
-  }
- }
+		
 }
 echo change()."\n"; ?>
