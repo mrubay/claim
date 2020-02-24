@@ -9,9 +9,10 @@ Perhatikan Langkah-Langkahnya
 4. pkg install curl
 5. pkg install git
 7. git clone https://github.com/mrubay/claim
-Lalu masukan kode perintah untuk menjalankan script , Kode dibawah ini untuk daftar dan auto claim voucher gofood gojek
+Lalu masukan kode perintah dibawah ini buntuk menjalankan script.
 8. cd claim
 9. php pin.php
 10. Masukin nomor yang mau didaftarkan
-11. Masukin Kode Otpnya
+11. Masukin Kode Otpnya Tunggu hingga selesai
+12. setelah selesai ketik "y" untuk buat pin Dan "n" jika tidak ingin buat pin
 Enter Dan Selesai
