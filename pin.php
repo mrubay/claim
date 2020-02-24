@@ -154,8 +154,6 @@ echo color("grey"," ======================================\n");
          die();
          }else{
          echo color("red","-] GAGAL!!!\n");
-         }
-         }
 	 }
          goto setpin;
          }
