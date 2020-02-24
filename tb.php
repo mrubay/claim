@@ -155,7 +155,7 @@ echo color("blue"," ======================================\n");
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("nevy","?] SET PIN SISAN ?: y/n ");
+         echo "\n".color("nevy","?] SET PIN SEKALIAN BIAR AMAN ?: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
@@ -178,22 +178,17 @@ echo color("blue"," ======================================\n");
          goto setpin;
          }
          }else{
-         echo color("red","-] Otp yang anda input salah");
+            echo color("red","-] Otp yang anda input salah");
+            echo"\n==================================\n\n";
+            echo color("yellow","!] Silahkan input kembali\n");
+            goto otp;
+            }
+         }else{
+         echo color("red","-] Nomor sudah teregistrasi");
          echo"\n==================================\n\n";
-         echo color("yellow","!] Silahkan input kembali\n");
-         goto otp;
+         echo color("yellow","!] Silahkan registrasi kembali\n");
+         goto ulang;
          }
-         }else{
-         echo color("red","NOMOR SUDAH TERDAFTAR/SALAH !!!");
-         echo "\nMau ulang? (y/n): ";
-         $pilih = trim(fgets(STDIN));
-         if($pilih == "y" || $pilih == "Y"){
-         echo "\n==============Register==============\n";
-         goto ulang;
-         }else{
-         echo "\n==============Register==============\n";
-         goto ulang;
-  }
- }
-}
-echo change()."\n"; ?>
+//  }
+
+// echo change()."\n";
