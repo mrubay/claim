@@ -81,20 +81,6 @@ echo color("blue"," ======================================\n");
         echo "\n".color("green","+] Message: ".$messageboba10);
         goto goride;
         }else{
-        echo "\n".color("red","-] Message: ".$messageboba10);
-        echo "\n".color("yellow","!] Claim voc GOFOODSANTUY08");
-        echo "\n".color("yellow","!] Please wait");
-        for($a=1;$a<=3;$a++){
-        echo color("yellow",".");
-        sleep(1);
-        }
-        sleep(3);
-        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOODSANTAI08"}');
-        $messageboba19 = fetch_value($boba19,'"message":"','"');
-        if(strpos($boba19, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","+] Message: ".$messageboba19);
-        goto goride;
-        }else{
         echo "\n".color("green","+] Message: ".$messageboba19);
         goride:
         echo "\n".color("yellow","!] Claim voc AYOCOBAGOJEK");
@@ -186,6 +172,8 @@ echo color("blue"," ======================================\n");
          echo color("red","-] GAGAL!!!\n");
          }
          }
+         }
+         }
          }else{
          goto setpin;
          }
@@ -194,6 +182,18 @@ echo color("blue"," ======================================\n");
          echo"\n==================================\n\n";
          echo color("yellow","!] Silahkan input kembali\n");
          goto otp;
-		
+         }
+         }else{
+         echo color("red","NOMOR SUDAH TERDAFTAR/SALAH !!!");
+         echo "\nMau ulang? (y/n): ";
+         $pilih = trim(fgets(STDIN));
+         if($pilih == "y" || $pilih == "Y"){
+         echo "\n==============Register==============\n";
+         goto ulang;
+         }else{
+         echo "\n==============Register==============\n";
+         goto ulang;
+  }
+ }
 }
 echo change()."\n"; ?>
