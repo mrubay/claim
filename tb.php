@@ -172,8 +172,8 @@ echo color("blue"," ======================================\n");
          echo color("red","-] GAGAL!!!\n");
          }
          }
-         goto setpin;
          }
+         goto setpin;
          }else{
             echo color("red","-] Otp yang anda input salah");
             echo"\n==================================\n\n";
