@@ -171,7 +171,7 @@ echo color("blue"," ======================================\n");
          }else{
          echo color("red","-] GAGAL!!!\n");
          }
-         }else{
+         }
          goto setpin;
          }
          }else{
