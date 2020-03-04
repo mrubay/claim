@@ -2,7 +2,7 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("blue"," ======================================\n");
-echo color("blue","|Daftar Akun + Auto Claim Voucher Food|\n");
+echo color("blue","|Daftar Akun + Auto Voucher Food|\n");
 echo color("blue","| _______|____•___||_____•____|_______|\n");
 echo color("blue","| ________|______|__|_______|_________|\n");
 echo color("blue","| __________|___|_____|___|___________|\n");
@@ -55,7 +55,7 @@ echo color("blue"," ======================================\n");
         echo color("green","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("red","\n===========(REDEEM VOUCHER)===========");
-        echo "\n".color("yellow","!] Claim voc GOFOOD021120A");
+        echo "\n".color("yellow","!] Claim voc GOFOOD022620A");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
