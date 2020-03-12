@@ -199,14 +199,14 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("red","?] SET PIN SEKLAIAN BIAR AMAN !!!: y/n ");
+         echo "\n".color("nevy","?] Mau set pin?: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("white","========( PIN MU = 112233 )========")."\n";
-         $data2 = '{"pin":"112233"}';
+         echo color("red","========( PIN ANDA = 225588 )========")."\n";
+         $data2 = '{"pin":"225588"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
-         echo "Otp pin: ";
+         echo "Otp set pin: ";
          $otpsetpin = trim(fgets(STDIN));
          $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
          echo $verifotpsetpin;
@@ -217,17 +217,27 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          }
          }
          }
+         }
+         }else{
+         goto setpin;
+         }
+         }else{
          echo color("red","-] Otp yang anda input salah");
          echo"\n==================================\n\n";
          echo color("yellow","!] Silahkan input kembali\n");
          goto otp;
          }
          }else{
-         echo color("red","-] Nomor sudah teregistrasi");
-         echo"\n==================================\n\n";
-         echo color("yellow","!] Silahkan registrasi kembali\n");
+         echo color("red","NOMOR SUDAH TERDAFTAR/SALAH !!!");
+         echo "\nMau ulang? (y/n): ";
+         $pilih = trim(fgets(STDIN));
+         if($pilih == "y" || $pilih == "Y"){
+         echo "\n==============Register==============\n";
          goto ulang;
-         }
-//  }
-
-// echo change()."\n";
+         }else{
+         echo "\n==============Register==============\n";
+         goto ulang;
+  }
+ }
+}
+echo change()."\n"; ?>
