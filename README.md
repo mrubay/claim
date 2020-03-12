@@ -16,3 +16,4 @@ Lalu masukan kode perintah untuk menjalankan script , Kode dibawah ini untuk daf
 10. Masukin nomor yang mau didaftarkan
 11. Masukin Kode Otpnya
 Enter Dan Selesai
+*NOTE: VOUCHER GORIDE & GOCAR BUAT JAKARTA YA
