@@ -227,7 +227,7 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          echo color("yellow","!] Silahkan input kembali\n");
          goto otp;
          }
-         }else{
+         }
          echo color("red","NOMOR SUDAH TERDAFTAR/SALAH !!!");
          echo "\nMau ulang? (y/n): ";
          $pilih = trim(fgets(STDIN));
