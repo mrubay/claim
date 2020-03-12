@@ -216,7 +216,6 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          echo color("red","-] GAGAL!!!\n");
          }
          }
-         }
          }else{
          echo color("red","-] Otp yang anda input salah");
          echo"\n==================================\n\n";
