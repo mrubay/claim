@@ -1,4 +1,4 @@
-Daftar + Auto Claim Voucher Gofood Terbaru 12/03/2020
+Daftar + Auto Claim Voucher GOFOOD, GORIDE, GOCAR Terbaru 17/03/2020
 Jangan Lupa Berdoa Sebelum Menjalankan Scripnya
 Perhatikan Langkah-Langkahnya
 1. pkg update
