@@ -15,4 +15,4 @@ Perhatikan Langkah-Langkahnya
 12. Masukin nomor yang mau didaftarkan
 13. Masukin Kode Otpnya
 Enter Dan Selesai 
-*NOTE: VOUCHER GORIDE & GOCAR BUAT JAKARTA YA
+*NOTE: VOUCHER GORIDE BUAT BANDUNG, SEMARANG, PALEMBANG, MAKASSAR, YOGYAKARTA, BALI & GOCAR BUAT JABODETABEK, SBY, BANDUNG
