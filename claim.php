@@ -46,7 +46,7 @@ goto login;
 	return rtrim( $input, "\n" );
 ulang:
 echo "\n";
-echo "\e[92m             |Selamat Datang $input|               \n";
+echo "\e[92m             (Selamat Datang $input)               \n";
 echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 // function change(){
         $nama = nama();
@@ -90,7 +90,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬▬(AUTO REDEEM VOUCHER)▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬▬🎫AUTO REDEEM VOUCHER🎫▬▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("white","🔐▶️ Claim voc GORIDE 8K");
         echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
@@ -212,7 +212,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 112233 🔧▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 112233 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
