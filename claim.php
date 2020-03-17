@@ -19,8 +19,8 @@ echo "\e[92m╚═════════════════════�
 	goto login;
 login:
 echo "\e[92m╔══════════════════════════════════╗\n";
-echo "\e[92m$pass = ( '║ User Login : ' );
-echo "\033[30;40m";
+$pass = ( '║ User Login : ' );
+echo "\e[93m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
 if($user == "mrubay" || $user == "pieter" || $user == "martin" || $user == "imel" || $user == "21")
