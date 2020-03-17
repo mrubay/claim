@@ -154,7 +154,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $voucher11 = getStr1('"title":"','",',$cekvoucher,"11");
         $voucher12 = getStr1('"title":"','",',$cekvoucher,"12");
         $voucher13 = getStr1('"title":"','",',$cekvoucher,"13");
-        echo "\n".color("yellow","🖩] Total voucher ".$total." : ");
+        echo "\n".color("yellow","🎫] Total voucher ".$total." : ");
         echo "\n".color("green","                     1. ".$voucher1);
         echo "\n".color("green","                     2. ".$voucher2);
         echo "\n".color("green","                     3. ".$voucher3);
@@ -208,11 +208,11 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("yellow","?] SET PIN SEKLAIAN BIAR AMAN !!!: y/n ");
+         echo "\e[92m▬▬▬▬▬▬|\e[93SET PIN SEKALIAN BIAR AMAN\e[92m|▬▬▬▬▬▬▬\n";
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("white","========( PIN MU = 112233 )========")."\n";
+         echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬|\e[93PIN-NYA 112233 YA\e[92m|▬▬▬▬▬▬▬▬▬▬▬\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
@@ -228,13 +228,13 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          }
          }else{
          echo color("red","-] Otp yang anda input salah");
-         echo"\n==================================\n\n";
+         echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("yellow","!] Silahkan input kembali\n");
          goto otp;
          }
          }else{
          echo color("red","-] Nomor sudah teregistrasi");
-         echo"\n==================================\n\n";
+         echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("yellow","!] Silahkan registrasi kembali\n");
          goto ulang;
          }
