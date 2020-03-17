@@ -90,7 +90,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo "\e[92m▬▬▬|\e[93AUTO REDEEM VOUCHER\e[92m|▬▬▬\n";
+        echo color("green","\n▬▬▬▬(AUTO REDEEM VOUCHER)▬▬▬▬");
         echo "\n".color("white","🔐] Claim voc GORIDE 8K");
         echo "\n".color("yellow","⏳] Please wait");
         for($a=1;$a<=3;$a++){
@@ -208,11 +208,11 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\e[92m▬▬🔧\e[93SET PIN SEKALIAN BIAR AMAN ? Y/N 🔧\e[92m|▬▬\n";
+         echo "\n".color("red","?] ▬SET PIN SEKLAIAN BIAR AMAN !!!: y/n▬ ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬🔧\e[93PIN-NYA 112233 YA🔧\e[92m|▬▬▬▬▬▬▬▬▬▬▬\n";
+         echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬🔧\e[93PIN-NYA 112233 YA🔧\e[92m|▬▬▬▬▬▬▬▬▬▬▬▬\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
