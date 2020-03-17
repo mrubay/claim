@@ -7,7 +7,7 @@ echo "\e[92m| ___________\e[93m•_+\e[92m_\e[93mBuat\e[92m_\e[93mPIN\e[92m_\e[9
 echo "\e[92m| _\e[91mUNTUK\e[92m_\e[91mREGISTRASI\e[92m_\e[91mSILAHKAN\e[92m_\e[91mHUBUNGI\e[92m_\e[91mADMIN\e[92m_|\n";
 echo "\e[92m| ___\e[93mTELEGRAM\e[92m_:\e[91m@mang*b*y\e[92m___________________|\n";
 echo "\e[92m| ___\e[93mGITHUB\e[92m___:\e[91mgithub.com/mrubay\e[92m___________|\n";
-echo "\e[92m| ___\e[93mVersion\e[92m__:\e[91m☢️UBUR\e[92m_\e[91m-\e[92m_\e[91mUBUR\e[92m_\e[91m21☢️\e[92m____________|\n";
+echo "\e[92m| ___\e[93mVersion\e[92m__:\e[91m😷UBUR\e[92m_\e[91m-\e[92m_\e[91mUBUR\e[92m_\e[91m21😷\e[92m____________|\n";
 echo "\e[92m| ___\e[93mTime\e[92m_____:\e[93m".date('[d-m-Y] [H:i:s]')."\e[92m_____|\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\n";
@@ -19,7 +19,7 @@ echo "\e[92m╚═════════════════════�
 	goto login;
 login:
 echo "\e[92m╔══════════════════════════════════╗\n";
-$pass = ( '║ User Login : ' );
+echo "\e[92m$pass = ( '║ User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
@@ -36,18 +36,18 @@ else
 {
 		echo "\e[92m╚══════════════════════════════════╝\n";	
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-		echo "\e[92m[📱] \e[91mMasukkan User Registrasi \e[92m [📱]\n";
-	        echo "\e[92m[📱]        \e[91mWARNING !!!       \e[92m [📱]\n";
-		echo "\e[92m[📱]    \e[91mSEGERA MINTA IZIN     \e[92m [📱]\n";
-	        echo "\e[92m[📱]   \e[91mTELEGRAM :@mangubay    \e[92m [📱]\n";
+		echo "\e[92m[🚫] \e[91mMasukkan User Registrasi   \e[92m [🚫]\n";
+	        echo "\e[92m[🚫]       \e[91m⚠️WARNING⚠️           \e[92m [🚫]\n";
+		echo "\e[92m[🚫]    \e[91mSEGERA MINTA IZIN       \e[92m [🚫]\n";
+	        echo "\e[92m[🚫]   \e[91mTELEGRAM :@mangubay      \e[92m [🚫]\n";
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 goto login;
 }
 	return rtrim( $input, "\n" );
 ulang:
 echo "\n";
-echo "\e[92m            Selamat Datang $input             \n";
-echo "\e[94m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\e[92m               |Selamat Datang $input|             \n";
+echo "\e[90m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
@@ -90,7 +90,7 @@ echo "\e[94m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬|\e[93⚙️AUTO REDEEM VOUCHER⚙️\e[92m|▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+        echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|\e[93AUTO REDEEM VOUCHER\e[92m|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
         echo "\n".color("white","🔐] Claim voc GORIDE 8K");
         echo "\n".color("yellow","⏳] Please wait");
         for($a=1;$a<=3;$a++){
@@ -154,7 +154,7 @@ echo "\e[94m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $voucher11 = getStr1('"title":"','",',$cekvoucher,"11");
         $voucher12 = getStr1('"title":"','",',$cekvoucher,"12");
         $voucher13 = getStr1('"title":"','",',$cekvoucher,"13");
-        echo "\n".color("yellow","!] Total voucher ".$total." : ");
+        echo "\n".color("yellow","🖩] Total voucher ".$total." : ");
         echo "\n".color("green","                     1. ".$voucher1);
         echo "\n".color("green","                     2. ".$voucher2);
         echo "\n".color("green","                     3. ".$voucher3);
