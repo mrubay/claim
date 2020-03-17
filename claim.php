@@ -119,13 +119,13 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("green","🔐▶️ Message: ".$message);
         gofood:
-        echo "\n".color("white","🔐▶️ Claim voc GOCAR 12K");
+        echo "\n".color("white","🔐▶️ Claim voc CASHBACK ALFAMART");
         echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(3);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOCAR12"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BELANJAINAJA"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","🔓▶️ Message: ".$message);
         echo "\n".color("white","🔐▶️ Claim voc CASHBACK ALFAMART");
