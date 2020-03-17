@@ -36,10 +36,10 @@ else
 {
 		echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";	
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-		echo "\e[92m[🚫]      \e[91mMasukkan User Registrasi     \e[92m [🚫]\n";
-	        echo "\e[92m[🚫]            \e[91m⚠️WARNING⚠️              \e[92m [🚫]\n";
-		echo "\e[92m[🚫]         \e[91mSEGERA MINTA IZIN         \e[92m [🚫]\n";
-	        echo "\e[92m[🚫]        \e[91mTELEGRAM :@mangubay        \e[92m [🚫]\n";
+		echo "\e[92m[🚫]       \e[91mMasukkan User Registrasi      \e[92m [🚫]\n";
+	        echo "\e[92m[🚫]            \e[91m⚠️ WARNING ⚠️              \e[92m [🚫]\n";
+		echo "\e[92m[🚫]          \e[91mSEGERA MINTA IZIN          \e[92m [🚫]\n";
+	        echo "\e[92m[🚫]         \e[91mTELEGRAM :@mangubay         \e[92m [🚫]\n";
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 goto login;
 }
