@@ -90,7 +90,7 @@ echo "\e[94m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color"\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬(\e[93⚙️AUTO REDEEM VOUCHER⚙️\e[92m)▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+        echo color"\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬|\e[93⚙️AUTO REDEEM VOUCHER⚙️\e[92m|▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
         echo "\n".color("white","🔐] Claim voc GORIDE 8K");
         echo "\n".color("yellow","⏳] Please wait");
         for($a=1;$a<=3;$a++){
